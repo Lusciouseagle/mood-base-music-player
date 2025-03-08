@@ -14,8 +14,12 @@ const templatesPath = path.join(__dirname, "../tampelates");
 app.set("view engine", "hbs");
 app.set("views", templatesPath);
 
+app.get("/",(req,res)=>{
+    res.render("login-signup-option-page");    
+})
+
 // Home Route - Show Login Page
-app.get("/", (req, res) => {
+app.get("/login", (req, res) => {
     res.render("login");
 });
 
