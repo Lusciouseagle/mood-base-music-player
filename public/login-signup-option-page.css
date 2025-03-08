@@ -1,0 +1,72 @@
+/* Cool Gradient Background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ff758c, #ff7eb3, #845ec2, #d65db1, #ff7eb3);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    overflow: hidden;
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Container for buttons */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+/* Login/Signup Buttons */
+.btn {
+    font-size: 24px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.login-btn {
+    background: #845ec2;
+    color: white;
+    box-shadow: 0 5px 15px rgba(132, 94, 194, 0.5);
+}
+.login-btn:hover {
+    background: #6b5bb8;
+}
+
+/* Signup Button Style */
+.signup-btn {
+    background: #ff7eb3;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 126, 179, 0.5);
+}
+.signup-btn:hover {
+    background: #ff5a9e;
+}

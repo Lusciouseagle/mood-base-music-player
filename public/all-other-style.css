@@ -1,0 +1,168 @@
+/* Smooth multi-color gradient background animation */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #c3cfe2, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Centered Glassmorphic Container */
+.container {
+    width: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.input-box {
+    position: relative;
+    margin: 15px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+/* Placeholder color */
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Show Password Eye Icon */
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+/* Gradient Buttons */
+.primary-btn {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    box-shadow: 0px 4px 10px rgba(255, 117, 140, 0.4);
+}
+
+.primary-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 117, 140, 0.6);
+}
+
+/* Disabled Button */
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* Code Input Boxes */
+.code-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.code-box input {
+    width: 40px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+/* Resend Code Timer */
+#resendBtn {
+    background: linear-gradient(90deg, #34e89e, #0f3443);
+    box-shadow: 0px 4px 10px rgba(52, 232, 158, 0.4);
+}
+
+#resendBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(52, 232, 158, 0.6);
+}
+
+/* Error Message */
+.error-message {
+    color: #ff4b5c;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.password-input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

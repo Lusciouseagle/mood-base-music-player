@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Music</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Animated Music Logo -->
+    <div class="music-logo">
+        <img src="images/music-logo-unscreen.gif" alt="Music Logo">
+    </div>
+
+    <!-- Mood Selection -->
+    <div class="mood-selection">
+        <h2>Select Your Mood</h2>
+        <button onclick="setMood('happy')">😊 Happy</button>
+        <button onclick="setMood('sad')">😢 Sad</button>
+        <button onclick="setMood('energetic')">⚡ Energetic</button>
+        <button onclick="setMood('chill')">🌙 Chill</button>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <h2 id="song-title"></h2>
+        <audio id="audio"></audio>
+        <div class="time-container">
+            <input type="range" id="seekbar" value="0">
+        </div>                
+        <button id="prevBtn">⏮</button>
+        <button id="playPauseBtn">▶</button>
+        <button id="nextBtn">⏭</button>
+    </div>
+
+    <div class="music-notes">
+        <span>♪</span>
+        <span>♫</span>
+        <span>♬</span>
+        <span>🎵</span>
+        <span>🎶</span>
+    </div> 
+    <div id="particles-js"></div>   
+    <script src="js/script.js"></script>
+</body>
+</html>
